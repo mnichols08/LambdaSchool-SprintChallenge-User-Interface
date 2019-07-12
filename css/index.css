@@ -66,18 +66,23 @@ p {
     line-height: 1.4;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container {
     width: 800px;
     margin: 0 auto;
 }
 
-.top-content {
+.top-content  {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
+
 
 .top-content .text-container {
     width: 48%;
@@ -164,12 +169,13 @@ html {
     color: #555;
     text-decoration: underline;
 }
-    
-  
+   
   .inline-block > div {
     display: inline-block;
   }
-
+  .margin-1 {
+    margin: 3%;
+  }
   .w-100 {
       width: 100%;
   }
@@ -253,12 +259,47 @@ html {
     margin: 0;
   }
   
-  .flex .box, .flex-inline .box {
-    width: 100%;
+  .flex-two-col > div {
+    border-bottom: 1px dashed black;
+    width: 43%;
+    margin: 3%;
   }
-  
-  .block .box {
-    width: 100%;
+
+  @media only screen and (max-width: 700px) {
+    .flex-two-col > div {
+      border-bottom: 1px dashed black;
+      width: 95%;
+      margin: 5%;
+    }
+  }
+
+  .flex-two-col > div > h3 {
+
+    margin-top: 2%;
+  }
+
+  button {
+    font-weight: 700;
+    margin: 5% 0;
+    padding: 2% 5%;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 6px;
+    transition: all .2s;
+  }
+
+  button:hover {
+    transform: scale(1.05);
+    filter: invert(1);
+  }
+
+  button:active {
+    transform: scale(1.01);
+    filter: invert(1);
+  }
+
+  button:active,button:focus {
+    outline: none;
   }
   
   .box {
