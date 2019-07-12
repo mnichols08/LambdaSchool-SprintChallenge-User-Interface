@@ -104,7 +104,6 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -128,7 +127,7 @@ p {
 
 footer {
     width: 100%;
-    background: black;
+    background: linear-gradient(45deg, #333, #222);
 }
 
 footer nav {
@@ -141,6 +140,175 @@ footer nav {
 }
 
 footer nav a {
-    color: white;
+    color: #ccc;
     text-decoration: none;
 }
+
+html {
+    height: 100%;
+    background: linear-gradient(45deg, #ccc, #fff);
+    background-attachment: fixed;
+    font-weight: 700;
+  }
+  
+  header {
+      margin: 1em 0;
+  }
+  header a{
+      color: #111;
+      text-decoration: none;
+      transition: all .5s;
+  }
+
+  header a:hover{
+    color: #555;
+    text-decoration: underline;
+}
+    
+  
+  .inline-block > div {
+    display: inline-block;
+  }
+
+  .w-100 {
+      width: 100%;
+  }
+  
+  .h-5 {
+      height: 5em;
+  }
+  .flex {
+    display: flex;
+  }
+
+  .flex.column {
+      flex-direction: column;
+  }
+
+  .flex.start{
+    justify-content: flex-start;
+  }
+
+  .flex.baseline {
+      align-items: baseline;
+  }
+
+  .flex.between {
+    justify-content: space-between;
+}
+
+.flex.around {
+    justify-content: space-around;
+}
+  
+  .flex-two-col {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .flex-two-col > div {
+    width: 50%;
+  }
+  
+  .flex-three-col {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .flex-three-col > div {
+    width: 33%;
+  }
+  
+  .flex-four-col {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .flex-four-col > div {
+    width: 25%;
+  }
+  
+  .flex-five-col {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .flex-five-col > div {
+    width: 20%;
+  }
+  
+  .flex-inline {
+    display: inline-flex;
+  }
+  
+  .flex-inline > div {
+    height: 100%;
+  }
+  
+  .inline-block {
+    display: inline-block;
+  }
+  
+  .display-properties > div {
+    margin: 0;
+  }
+  
+  .flex .box, .flex-inline .box {
+    width: 100%;
+  }
+  
+  .block .box {
+    width: 100%;
+  }
+  
+  .box {
+    border-radius: 6px;
+    height: 5em;
+    width: 5em;
+  }
+  
+  .box:first-of-type {
+    background: teal;
+    color: #ccc;
+  }
+  
+  .box:nth-of-type(2) {
+    background: gold;
+  }
+  
+  .box:nth-of-type(3) {
+    background: cadetblue;
+  }
+  
+  .box:nth-of-type(4) {
+    background: coral;
+  }
+  
+  .box:nth-of-type(5) {
+    background: crimson;
+    color: #111;
+  }
+  
+  .box:nth-of-type(6) {
+    background: forestgreen;
+  }
+  
+  .box:nth-of-type(7) {
+    background: darkorchid;
+    color: #ccc;
+  }
+  
+  .box:nth-of-type(8) {
+    background: hotpink;
+  }
+  
+  .box:nth-of-type(9) {
+    background: indigo;
+  }
+  
+  .box:nth-of-type(10) {
+    background: dodgerblue;
+    color: #111;
+  }
+  
+  
