@@ -301,6 +301,59 @@ html {
   button:active,button:focus {
     outline: none;
   }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .absolute {
+    position: absolute;
+    color: #fff;
+    top: 25%;
+    right: 15%;
+    transform: translate(-50%,-50%);
+  }
+
+  form h2{
+    justify-self:center;
+  }
+  .contact form{
+    display:grid;
+    align-items:center;
+  }
+  .contact label,textarea{
+    text-align:justify;
+    margin-bottom:.25em;
+  }
+  .contact textarea{
+    resize:vertical;
+    max-height:15em;
+    min-height:6em;
+  }
+  .contact button{
+    align-self:center;
+  }
+  .contact .name{
+    display:grid;
+  }
+  @media (min-width:550px){
+    .contact form{
+    max-width:50%;
+      margin:auto;
+    }
+    .contact .name{
+    display:grid;
+    grid-template-areas: 
+      "firstName lastName";
+    grid-column-gap:1em;
+  }
+  .contact label[for="firstName"]{
+    grid-area:firstName;
+  }
+  .contact label[for="lastName"]{
+    grid-area:lastName;
+    }
+  }
   
   .box {
     border-radius: 6px;
